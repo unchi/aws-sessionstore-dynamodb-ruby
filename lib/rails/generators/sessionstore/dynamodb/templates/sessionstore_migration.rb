@@ -1,4 +1,4 @@
-class <%= name.camelize %> < ActiveRecord::Migration
+class <%= name.camelize %> < ActiveRecord::Migration[5.2]
   def up
     Aws::SessionStore::DynamoDB::Table.create_table
   end

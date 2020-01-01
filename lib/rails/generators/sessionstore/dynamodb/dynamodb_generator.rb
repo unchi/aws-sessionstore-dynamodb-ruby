@@ -24,7 +24,7 @@ module Sessionstore
       source_root File.expand_path('templates', File.dirname(__FILE__))
 
       # Desired name of migration class
-      argument :name, :type => :string, :default => "sessionstore_migration"
+      argument :name, :type => :string, :default => "sessionstore_migration.rb"
 
       # @return [Rails Migration File] migration file for creation and deletion of
       #   session table.
