@@ -15,7 +15,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rake', '~> 12.0'
+gem 'rake', '~> 13.0'
 
 group :documentation do
   gem 'yard', '~> 0.9.11'
