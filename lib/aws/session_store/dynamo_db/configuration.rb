@@ -288,7 +288,7 @@ module Aws::SessionStore::DynamoDB
 
     # @return [Hash] Client subset options hash.
     def client_subset(options = {})
-      client_keys = [:aws_secret_key, :aws_region, :aws_access_key, :api_version]
+      client_keys = [:credentials, :region, :endpoint]
       options.inject({}) do |opts, (opt_name, opt_value)|
         opts[opt_name.to_sym] = opt_value if client_keys.include?(opt_name.to_sym)
         opts
